@@ -1,0 +1,127 @@
+body{
+    margin: 5vw 5vw 0 5vw;
+}
+
+.main-grid{
+    display: grid;
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-rows: .5fr 3fr 2fr;
+    height: 82vh;
+    max-width: 769px;
+    margin: 0 auto;
+}
+
+/* .cell{
+    border: 1px solid black;
+} */
+
+.header-area{
+    display: flex;
+    justify-content: space-between;
+}
+.circle-logotype{
+    font-size: 4em;
+    text-transform: lowercase;
+    font-style: italic;
+    animation: spin 2s 1;
+}
+.seven-dollar-sticker{
+    max-height: 70px;
+}
+
+.collage-area{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* .collage-area > img{
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+} */
+.top-section-collage{
+    display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 
+    ". boot-check"
+    "checkshape-circle boot-check"
+    ;
+
+
+}
+
+.checkshape-circle{
+    grid-area: checkshape-circle;
+    background: url('images/checkshape-circle.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.boot-check{
+    grid-area: boot-check;
+    background: url('images/boot-check.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.lower-section-collage{
+    display: grid;
+    /* grid-template-rows: 6fr 2fr; */
+    grid-template-columns: 3fr 7fr;
+}
+
+.vintage-sticker-arrow{
+    background: url('images/vintage-sticker-arrow.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.check-tape{
+    background: url('images/check-tape.png') center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.subtitle-area{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding-top: 2vw;
+}
+
+h2{
+    font-size: 1em;
+    text-wrap: balance;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+}
+
+.angle-down-arrow{
+    background: url('images/angle-down-arrow.png') left top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 75px;
+    margin-top: 20px;
+    animation: 3s linear 2s shake;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* animations */
+
+@keyframes shake {
+    0% {rotate: 0;}
+    50% {rotate: 10deg;}
+    100% {rotate: 0deg;}
+}
+
+@keyframes spin {
+    0% {rotate: 0;}
+    100% {rotate: 360deg;}
+}
+
+
